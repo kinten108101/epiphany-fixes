@@ -1,0 +1,70 @@
+.developer-mozilla .top-navigation .container {
+  gap: 0px !important;
+}
+
+.developer-mozilla .main-wrapper {
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+.developer-mozilla header .container > .top-navigation-wrap {
+  display: none !important;
+}
+
+.developer-mozilla .top-banner {
+  display: none !important;
+}
+
+.developer-mozilla .sidebar-filter-container {
+  background: none !important;
+}
+
+.developer-mozilla .header-search .search-input-field {
+  min-width: 10rem !important;
+}
+
+body.archive-box > header {
+  display: none !important;
+}
+
+body.archive-box > iframe {
+  height: 100% !important;
+  border-top: none !important;
+}
+
+.youtube #search-icon-legacy {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.youtube #voice-search-button {
+  display: none !important;
+}
+
+.youtube #header {
+  display: none !important;
+}
+
+.youtube #buttons {
+  display: none !important;
+}
+
+.developer-apple .ac-gn-item > a {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.developer-apple .ac-gn-searchform-input {
+  position: absolute !important;
+}
+
+.rust-docs input.search-input {
+  font-size: 0.9em !important;
+}
+
+.react-dev .lg\:grid-cols-sidebar-content {
+  grid-template-columns: 10rem auto !important;
+}
+
