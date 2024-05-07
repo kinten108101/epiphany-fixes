@@ -1,0 +1,13 @@
+{
+  "name": "epiphany-fixes",
+  "type": "module",
+  "author": "Kinten Le <kinten108101@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.21.0",
+    "esbuild-sass-plugin": "^3.2.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.js"
+  }
+}

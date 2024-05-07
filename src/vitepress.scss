@@ -1,0 +1,19 @@
+@mixin default {
+  kbd {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
+  .content nav button[aria-haspopup="true"] {
+    height: 100% !important;
+  }
+
+  .content nav .menu {
+    top: calc(var(--vp-nav-height) / 2 + 28px) !important;
+  }
+
+  .DocSearch-Button .DocSearch-Button-Placeholder {
+    margin-top: 0px !important;
+  }
+}

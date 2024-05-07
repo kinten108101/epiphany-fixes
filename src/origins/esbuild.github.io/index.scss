@@ -1,0 +1,14 @@
+@mixin default {
+	& {
+		padding-left: 400px !important;
+		max-width: 1000px !important;
+	}
+	
+	nav {
+		margin: 0px 75px !important;
+	}
+
+	#menu {
+		width: fit-content !important;
+	}
+}

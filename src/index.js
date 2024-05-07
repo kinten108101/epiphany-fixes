@@ -1,34 +1,5 @@
-/**
- * @param {String} HTML representing a single element.
- * @param {Boolean} flag representing whether or not to trim input whitespace, defaults to true.
- * @return {Element | HTMLCollection | null}
- */
-function fromHTML(html, trim = true) {
-  // Process the HTML string.
-  html = trim ? html.trim() : html;
-  if (!html) return null;
-
-  // Then set up a new template element.
-  const template = document.createElement('template');
-  template.innerHTML = html;
-  const result = template.content.children;
-
-  // Then return either an HTMLElement or HTMLCollection,
-  // based on whether the input HTML had one or more roots.
-  if (result.length === 1) return result[0];
-  return result;
-}
-
-const hostname2css = {
-    "developer.mozilla.org": "developer-mozilla",
-    "www.youtube.com": "youtube",
-    "developer.apple.com": "developer-apple",
-    "docs.rs": "rust-docs",
-    "react.dev": "react-dev",
-    "harelang.org": "harelang",
-    "gjs.guide": "gjs-guide",
-    "github.com": "github"
-};
+import { fromHTML } from "./utils.js";
+import "./index.scss";
 
 const hostname2init = {};
 
@@ -118,7 +89,7 @@ function run() {
     const body = document.getElementsByTagName("body")[0];
     if (!body) return;
     (() => {
-        const classname = hostname2css[hostname];
+        const classname = hostname;
         if (classname === undefined) return;
         body.classList.add([classname]);
     })();

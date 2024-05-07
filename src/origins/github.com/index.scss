@@ -1,0 +1,17 @@
+@mixin default {
+	span[data-component="buttonContent"] div:has(> svg.octicon) {
+	  display: flex !important;
+	  align-items: center !important;
+	}
+
+	summary[role="button"] {
+	  display: flex !important;
+	  align-items: center !important;
+	}
+
+	summary[role="button"] span:has(> svg.octicon[aria-hidden="false"]) {
+	  display: flex !important;
+	  align-items: center !important;
+	  column-gap: 6px;
+	}
+}

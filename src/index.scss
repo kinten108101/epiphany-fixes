@@ -1,33 +1,40 @@
-body.developer-mozilla {
+@use "vitepress" as vitepress;
+@use "origins";
+
+body.vitepress {
+	@include vitepress.default;
+}
+
+body.developer\.mozilla\.org {
   overflow-x: hidden !important;
 }
 
-.developer-mozilla .top-navigation .container {
+.developer\.mozilla\.org .top-navigation .container {
   gap: 0px !important;
 }
 
-.developer-mozilla .main-wrapper {
+.developer\.mozilla\.org .main-wrapper {
   margin: 0 !important;
   max-width: 100% !important;
 }
 
-.developer-mozilla header {
+.developer\.mozilla\.org header {
   overflow-x: auto !important;
 }
 
-.developer-mozilla header .container > .top-navigation-wrap {
+.developer\.mozilla\.org header .container > .top-navigation-wrap {
   display: none !important;
 }
 
-.developer-mozilla .top-banner {
+.developer\.mozilla\.org .top-banner {
   display: none !important;
 }
 
-.developer-mozilla .sidebar-filter-container {
+.developer\.mozilla\.org .sidebar-filter-container {
   background: none !important;
 }
 
-.developer-mozilla .header-search .search-input-field {
+.developer\.mozilla\.org .header-search .search-input-field {
   min-width: 10rem !important;
 }
 
@@ -38,45 +45,45 @@ body.archive-box > header {
 body.archive-box > iframe {
   height: 100% !important;
   border-top: none !important;
-}
+}	
 
-body.youtube {
+body.www\.youtube\.com {
   font-size: 2em !important;
 }
 
-.youtube #search-icon-legacy {
+.www\.youtube\.com #search-icon-legacy {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 }
 
-.youtube #voice-search-button {
+.www\.youtube\.com #voice-search-button {
   display: none !important;
 }
 
-.youtube #header {
+.www\.youtube\.com #header {
   display: none !important;
 }
 
-.youtube #buttons {
+.www\.youtube\.com #buttons {
   display: none !important;
 }
 
-.developer-apple .ac-gn-item > a {
+.developer\.apple\.com .ac-gn-item > a {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
 }
 
-.developer-apple .ac-gn-searchform-input {
+.developer\.apple\.com .ac-gn-searchform-input {
   position: absolute !important;
 }
 
-.rust-docs input.search-input {
+.docs\.rs input.search-input {
   font-size: 0.9em !important;
 }
 
-.react-dev .lg\:grid-cols-sidebar-content {
+.react\.dev .lg\:grid-cols-sidebar-content {
   grid-template-columns: 10rem auto !important;
 }
 
@@ -117,24 +124,6 @@ body.has-banner {
   }
 }
 
-.vitepress kbd {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-}
-
-.vitepress .content nav button[aria-haspopup="true"] {
-  height: 100% !important;
-}
-
-.vitepress .content nav .menu {
-  top: calc(var(--vp-nav-height) / 2 + 28px) !important;
-}
-
-.DocSearch-Button .DocSearch-Button-Placeholder {
-  margin-top: 0px !important;
-}
-
 dialog[open] {
   opacity: 1;
   transform: scaleY(1);
@@ -163,18 +152,3 @@ dialog {
   }
 }
 
-.github span[data-component="buttonContent"] div:has(> svg.octicon) {
-  display: flex !important;
-  align-items: center !important;
-}
-
-.github summary[role="button"] {
-  display: flex !important;
-  align-items: center !important;
-}
-
-.github summary[role="button"] span:has(> svg.octicon[aria-hidden="false"]) {
-  display: flex !important;
-  align-items: center !important;
-  column-gap: 6px;
-}
