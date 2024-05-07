@@ -1,3 +1,7 @@
+body.developer-mozilla {
+  overflow-x: hidden !important;
+}
+
 .developer-mozilla .top-navigation .container {
   gap: 0px !important;
 }
@@ -5,6 +9,10 @@
 .developer-mozilla .main-wrapper {
   margin: 0 !important;
   max-width: 100% !important;
+}
+
+.developer-mozilla header {
+  overflow-x: auto !important;
 }
 
 .developer-mozilla header .container > .top-navigation-wrap {
@@ -30,6 +38,10 @@ body.archive-box > header {
 body.archive-box > iframe {
   height: 100% !important;
   border-top: none !important;
+}
+
+body.youtube {
+  font-size: 2em !important;
 }
 
 .youtube #search-icon-legacy {
@@ -68,3 +80,101 @@ body.archive-box > iframe {
   grid-template-columns: 10rem auto !important;
 }
 
+body {
+  margin: 0 !important;
+}
+
+body.has-banner {
+  margin-top: 64px !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.bg-accent {
+  background-color: #C9DDF5 !important; 
+}
+
+.text-accent {
+  color: #000000 !important;
+}
+
+.bg-button {
+  background-color: rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-accent {
+    background-color: #283C54 !important;
+  }
+
+  .text-accent {
+    color: #FFFFFF !important;
+  }
+  
+  .bg-button {
+    background-color: rgba(255,255,255,0.1);
+  }
+}
+
+.vitepress kbd {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.vitepress .content nav button[aria-haspopup="true"] {
+  height: 100% !important;
+}
+
+.vitepress .content nav .menu {
+  top: calc(var(--vp-nav-height) / 2 + 28px) !important;
+}
+
+.DocSearch-Button .DocSearch-Button-Placeholder {
+  margin-top: 0px !important;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/*   Closed state of the dialog   */
+dialog {
+  opacity: 0;
+  transform: scaleY(0);
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out,
+    overlay 0.3s ease-out allow-discrete,
+    display 0.3s ease-out allow-discrete;
+  /* Equivalent to
+  transition: all 0.7s allow-discrete; */
+}
+
+/*   Before-open state  */
+/* Needs to be after the previous dialog[open] rule to take effect,
+    as the specificity is the same */
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
+.github span[data-component="buttonContent"] div:has(> svg.octicon) {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.github summary[role="button"] {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.github summary[role="button"] span:has(> svg.octicon[aria-hidden="false"]) {
+  display: flex !important;
+  align-items: center !important;
+  column-gap: 6px;
+}
