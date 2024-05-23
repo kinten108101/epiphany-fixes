@@ -16,3 +16,6 @@ except FileExistsError as e:
 
 with open(joinpath(dirpath, "index.scss"), "w") as file:
     file.write("@mixin default {\n\n}\n")
+
+with open(joinpath(dirpath, "index.js"), "w") as file:
+    file.write("export default function () {\n\n}\n")

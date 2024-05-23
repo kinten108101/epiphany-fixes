@@ -1,7 +1,14 @@
 import { fromHTML } from "./utils.js";
+import * as origins from "./origins/index.js";
 import "./index.scss";
 
 const hostname2init = {};
+
+for (const xkey in origins) {
+    const x = origins[xkey];
+    const name = String(x.initName).replaceAll("_dot_", ".");
+    hostname2init[name] = x;
+}
 
 const registerWithInitMap = (func) => {
     if (!("name" in func) || typeof func["name"] !== "string") throw new Error;

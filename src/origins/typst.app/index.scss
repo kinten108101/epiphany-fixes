@@ -1,0 +1,28 @@
+@mixin default {
+	main > ul.breadcrumbs *:has(img) {
+		display: flex !important;
+		flex-direction: row !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+	
+	.search {
+		display: flex !important;
+		flex-direction: row !important;
+		align-items: center !important;
+	}
+	
+	.search > img {
+		position: relative !important;
+		left: 24px !important;
+		top: 0px !important;
+	}
+	
+	nav li > button:has(img) {
+		/** center button icon **/
+		display: flex !important;
+		/** this expand button is not contained in the nav button. While it IS contained by li, that also includes the expanded ul. Anyway, because this button is not contained so we can't do much but nudge the absolute position around. This will break in other browsers. Fuck whoever wrote HTML this way **/
+		right: 5px !important;
+		top: 5px !important;
+	}
+}
