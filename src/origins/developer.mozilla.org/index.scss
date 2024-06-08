@@ -1,0 +1,32 @@
+@mixin default {
+	overflow-x: hidden !important;
+
+	.top-navigation .container {
+	  gap: 0px !important;
+	}
+
+	.main-wrapper {
+	  margin: 0 !important;
+	  max-width: 100% !important;
+	}
+
+	header {
+	  overflow-x: auto !important;
+	}
+
+	header .container > .top-navigation-wrap {
+	  display: none !important;
+	}
+
+	.top-banner {
+	  display: none !important;
+	}
+
+	.sidebar-filter-container {
+	  background: none !important;
+	}
+
+	.header-search .search-input-field {
+	  min-width: 10rem !important;
+	}	
+}

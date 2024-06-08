@@ -1,0 +1,12 @@
+@mixin default {
+	.ac-gn-item > a {
+	  display: flex !important;
+	  flex-direction: row !important;
+	  align-items: center !important;
+	}
+
+	.ac-gn-searchform-input {
+	  position: absolute !important;
+	}
+	
+}

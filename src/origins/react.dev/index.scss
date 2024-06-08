@@ -1,0 +1,5 @@
+@mixin default {
+	.lg\:grid-cols-sidebar-content {
+	  grid-template-columns: 10rem auto !important;
+	}	
+}
