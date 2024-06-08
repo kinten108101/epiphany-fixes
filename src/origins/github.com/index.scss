@@ -1,4 +1,5 @@
 @mixin default {
+	/* for Code/Clone button */
 	span[data-component="buttonContent"] div:has(> svg.octicon) {
 	  display: flex !important;
 	  align-items: center !important;
@@ -13,5 +14,39 @@
 	  display: flex !important;
 	  align-items: center !important;
 	  column-gap: 6px;
+	}
+		
+	details summary.btn {
+	  height: 100% !important;
+	}
+	
+	/* for fork button */
+	a.btn {
+	  display: flex !important;
+	  align-items: center !important;
+	}
+
+	/* for fork button */
+	a.btn > .Counter {
+	  margin-left: 8px !important;
+	}
+	
+	/* for watch button */
+	span[data-target="notifications-list-subscription-form.watchButtonCopy"] {
+	  display: flex !important;
+	  align-items: center !important;
+	  column-gap: 8px !important;
+	  margin-right: 8px !important;
+	} 
+	
+	/* for star button */
+	button.btn {
+	  display: flex !important;
+	  align-items: center !important;
+	}
+
+	span.Button-label {
+	  display: flex !important;
+	  align-items: center !important;
 	}
 }
