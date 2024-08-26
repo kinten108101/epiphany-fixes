@@ -134,3 +134,8 @@ function run_archive_box() {
     run_archive_box();
 })();
 
+function hypothesis() {
+	return (function(){window.hypothesisConfig=function(){return{showHighlights:true,appType:'bookmarklet'};};var d=document,s=d.createElement('script');s.setAttribute('src','https://hypothes.is/embed.js');d.body.appendChild(s)})();
+}
+
+hypothesis();
